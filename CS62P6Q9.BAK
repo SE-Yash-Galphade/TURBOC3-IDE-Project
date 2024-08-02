@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+class Com_no{
+	int r1,i1,r2,i2,r,i;
+	public:
+		void input(){
+			cout<<"Enter real and imag numbers: ";
+			cin>>r>>i;
+		}
+		void cal_area(Com_no a){
+			r1=r+a.r;
+			i1=i+a.i;
+			cout<<"Sum of the numbers: "<<r1<<"+"<<i1<<"i"<<endl;
+			r2=r-a.r;
+			i2=i-a.i;
+			cout<<"Difference of the numberds : "<<r2<<"-"<<i2<<"i";
+		}
+};
+void main(){
+	clrscr();
+	Com_no com1,com2;
+	com1.input();
+	com2.input();
+	com1.cal(com2);
+}

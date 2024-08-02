@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int pal(int);
+main(){
+	int a, b, n;
+	cout<<"Enter a Number: ";
+	cin>>a;
+	n=a;
+	a=pal(a);
+
+	if(n==a)
+		cout<<"Palindrome";
+	else
+		cout<<"Not a Palindrome";
+	getch();
+}
+int pal(int x){
+	int r, sum=0, n;
+	for(;x>0;){
+		r=x%10;
+		sum=(sum*10)+r;
+		n=n/10;
+	}
+	return(sum);
+}

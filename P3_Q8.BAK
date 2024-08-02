@@ -1,0 +1,20 @@
+#include<iostream.h>
+#include<conio.h>
+void main(){
+	int a=0, b=1, c, n, sum;
+	clrscr();
+	cout<<"Enter the Limit: ";
+	cin>>n;
+	cout<<"The series is: "<<a<<b;
+	n=n-2;
+	sum=a+b;a
+	while(n!=0){
+		c=a+b;
+		sum=sum+c;
+		cout<<c;
+		a=b;
+		b=c;
+		n--;
+	}
+	cout<<"\nSum of all terms: "<<sum;
+}
